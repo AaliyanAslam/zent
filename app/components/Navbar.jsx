@@ -1,14 +1,16 @@
 import React from 'react';
 import { Menu, Heart, User, ShoppingBag, ChevronDown , UserCircle2 } from 'lucide-react';
-import { Montserrat, Inter } from 'next/font/google';
+import { Montserrat, Inter , Urbanist } from 'next/font/google';
 import Image from 'next/image';
 
 const montserrat = Montserrat({ subsets: ['latin'], weight: ['400', '700', '900'] });
 const inter = Inter({ subsets: ['latin'], weight: ['400', '600'] });
+const urban = Urbanist({ subsets: ['latin'], weight: ['400', '600'] });
+
 
 const Navbar = () => {
   return (
-    <nav className={`absolute top-0 left-0 w-full z-50 flex items-center justify-between px-35 py-6 text-white ${inter.className}`}>
+    <nav className={`absolute top-0 left-0 w-full z-50 flex items-center justify-between px-35 py-6 text-white ${urban.className}`}>
       
       {/* LEFT SECTION: Logo & Menu */}
       <div className="flex items-center gap-6">
