@@ -3,7 +3,7 @@ import { Menu, Heart, User, ShoppingBag, ChevronDown , UserCircle2 } from 'lucid
 import { Montserrat, Inter , Urbanist } from 'next/font/google';
 import Image from 'next/image';
 
-const montserrat = Montserrat({ subsets: ['latin'], weight: ['400', '700', '900'] });
+// const montserrat = Montserrat({ subsets: ['latin'], weight: ['400', '700', '900'] });
 const inter = Inter({ subsets: ['latin'], weight: ['400', '600'] });
 const urban = Urbanist({ subsets: ['latin'], weight: ['400', '600'] });
 
