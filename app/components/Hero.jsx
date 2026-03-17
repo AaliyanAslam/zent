@@ -21,7 +21,7 @@ const Hero = () => {
 
       <div className="absolute inset-0 backdrop-blur-xl bg-black/20 z-1" />
 
-      <div className="relative z-10 text-center  h-100 px-35 w-full">
+      <div className="relative z-10 text-center  h-180 px-35 w-full">
         <div className={`flex justify-between items-center ${urban.className}`}>
           <div className="">
               <div className="flex justify-start mb-6">
@@ -39,8 +39,29 @@ const Hero = () => {
             </button>
            </div>
           </div>
-          <div className="text-white text-[2rem]">2</div>
-          <div>3</div>
+     <div className="">
+  {/* The Image Component */}
+  <Image 
+    src="/watch-images/blue_watch1.png" 
+    alt="Tourbillon Detail" 
+    width={500} 
+    height={400} 
+    className="rounded-lg object-cover"
+  />
+
+
+</div>
+          <div className="mt-60">
+
+
+              <Image 
+    src="/watch-images/video_img.png" 
+    alt="Tourbillon Detail" 
+    width={200} 
+    height={400} 
+    className="rounded-lg object-cover"
+  />
+          </div>
         </div>
       </div>
     </section>
