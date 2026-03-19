@@ -243,7 +243,7 @@ const Hero = () => {
 
   // ─────────────────────────────────────────────────────────────────────────
   return (
-    <section className="relative w-full h-160 sm:h-screen overflow-hidden bg-black">
+    <section className="relative w-full h-100 sm:h-screen overflow-hidden bg-black">
       <nav className="absolute top-0 left-0 w-full z-30 px-6 md:px-12 py-6">
         <Navbar />
       </nav>
@@ -289,14 +289,14 @@ const Hero = () => {
               {currentCode}
             </p>
           </div>
-          <div className="text-[1.5rem] sm:text-[3rem] tracking-wide leading-[1.2] text-start text-white uppercase">
+          <div className="text-[1.2rem] sm:text-[3rem] tracking-wide leading-[1.2] text-start text-white uppercase">
             <h1>Open Gear</h1>
             <h1>Flying</h1>
             <h1>Tourbillon</h1>
             <h1 className="text-[#0074AE]">Paraiba</h1>
           </div>
           <div className="mt-10">
-            <button className="text-white uppercase text-[0.6rem] sm:text-[0.7rem] tracking-widest cursor-pointer bg-[#0074AE] px-4 sm:px-8 py-2 sm:py-3 rounded-full hover:bg-white hover:text-black transition-all duration-300 shadow-lg shadow-blue-900/20">
+            <button className="text-white uppercase text-[0.5rem] sm:text-[0.7rem] tracking-widest cursor-pointer bg-[#0074AE] px-4 sm:px-8 py-2 sm:py-3 rounded-full hover:bg-white hover:text-black transition-all duration-300 shadow-lg shadow-blue-900/20">
               Find out more
             </button>
           </div>
@@ -304,7 +304,7 @@ const Hero = () => {
 
         {/* Center: watch carousel */}
         <div
-          className="shrink-0 w-80 h-80 sm:w-155 sm:h-155  flex justify-center items-center relative"
+          className="shrink-0 w-60 h-60 sm:w-155 sm:h-155  flex justify-center items-center relative"
           style={{ overflow: "hidden" }}
         >
           <div
@@ -340,7 +340,7 @@ const Hero = () => {
         </div>
 
         {/* Right */}
-        <div className="hidden lg:flex w-1/4 justify-end items-end pb-24">
+        <div className="hidden lg:flex w-1/4 justify-end items-end mt-110 pb-24">
           <div className="relative group">
             <Image
               src="/watch-images/video_img.png"
@@ -355,7 +355,7 @@ const Hero = () => {
 
       {/* ── Timeline bar ── */}
       <div
-        className={`absolute bottom-6 left-0 w-full z-20 ${urban.className}`}
+        className={`absolute hidden lg:block bottom-6 left-0 w-full z-20 ${urban.className}`}
      
       >
         <div className="flex items-center justify-between px-8 md:px-14 h-16">
