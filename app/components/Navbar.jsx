@@ -21,7 +21,7 @@ const Navbar = () => {
       className={`absolute top-0 left-0 w-full z-50 ${urban.className} text-white`}
     >
       {/* Main Container */}
-      <div className="max-w-[1440px] mx-auto flex items-center justify-between px-6 py-4 md:px-12 lg:px-20">
+      <div className="max-w-450 mx-auto flex items-center justify-between px-6 py-4 md:px-12 lg:px-20">
         {/* LEFT SECTION: Logo & Mobile Toggle */}
         <div className="flex items-center gap-4 lg:gap-8">
           <button

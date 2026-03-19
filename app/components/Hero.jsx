@@ -358,7 +358,7 @@ const Hero = () => {
         className={`absolute hidden lg:block bottom-6 left-0 w-full z-20 ${urban.className}`}
      
       >
-        <div className="flex items-center justify-between px-8 md:px-14 h-16">
+        <div className="flex items-center justify-between px-8 md:px-35 h-16">
           {/* Left — collection icon + name */}
           <div className="flex items-center gap-3 w-1/4">
             {/* Minimal watch icon */}
