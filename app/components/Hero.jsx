@@ -243,7 +243,7 @@ const Hero = () => {
 
   // ─────────────────────────────────────────────────────────────────────────
   return (
-    <section className="relative w-full h-screen overflow-hidden bg-black">
+    <section className="relative w-full h-160 sm:h-screen overflow-hidden bg-black">
       <nav className="absolute top-0 left-0 w-full z-30 px-6 md:px-12 py-6">
         <Navbar />
       </nav>
@@ -280,7 +280,7 @@ const Hero = () => {
         className={`relative z-10 flex items-center justify-between h-full px-6 md:px-20 xl:px-35 w-full ${urban.className}`}
       >
         {/* Left */}
-        <div className="w-1/3 flex-shrink-0">
+        <div className="w-1/3 shrink-0">
           <div className="mb-6">
             <p
               ref={codeRef}
@@ -289,14 +289,14 @@ const Hero = () => {
               {currentCode}
             </p>
           </div>
-          <div className="text-[3rem] tracking-wide leading-[1.2] text-start text-white uppercase">
+          <div className="text-[1.5rem] sm:text-[3rem] tracking-wide leading-[1.2] text-start text-white uppercase">
             <h1>Open Gear</h1>
             <h1>Flying</h1>
             <h1>Tourbillon</h1>
             <h1 className="text-[#0074AE]">Paraiba</h1>
           </div>
           <div className="mt-10">
-            <button className="text-white uppercase text-[0.7rem] tracking-widest cursor-pointer bg-[#0074AE] px-8 py-3 rounded-full hover:bg-white hover:text-black transition-all duration-300 shadow-lg shadow-blue-900/20">
+            <button className="text-white uppercase text-[0.6rem] sm:text-[0.7rem] tracking-widest cursor-pointer bg-[#0074AE] px-4 sm:px-8 py-2 sm:py-3 rounded-full hover:bg-white hover:text-black transition-all duration-300 shadow-lg shadow-blue-900/20">
               Find out more
             </button>
           </div>
@@ -304,7 +304,7 @@ const Hero = () => {
 
         {/* Center: watch carousel */}
         <div
-          className="flex-shrink-0 w-[620px] h-[620px] flex justify-center items-center relative"
+          className="shrink-0 w-80 h-80 sm:w-155 sm:h-155  flex justify-center items-center relative"
           style={{ overflow: "hidden" }}
         >
           <div
@@ -358,7 +358,7 @@ const Hero = () => {
         className={`absolute bottom-6 left-0 w-full z-20 ${urban.className}`}
      
       >
-        <div className="flex items-center justify-between px-8 md:px-14 h-[64px]">
+        <div className="flex items-center justify-between px-8 md:px-14 h-16">
           {/* Left — collection icon + name */}
           <div className="flex items-center gap-3 w-1/4">
             {/* Minimal watch icon */}
@@ -415,7 +415,7 @@ const Hero = () => {
 
           {/* Center — tick timeline */}
           <div className="flex-1 flex items-center justify-center">
-            <div className="relative flex items-center gap-0 w-full max-w-[520px]">
+            <div className="relative flex items-center gap-0 w-full max-w-130">
               {/* Progress line track */}
               <div
                 className="absolute top-1/2 left-0 right-0 h-px -translate-y-1/2"
@@ -476,7 +476,7 @@ const Hero = () => {
                     {/* Mini dots between ticks */}
                     {i < slides.length - 1 && (
                       <div
-                        className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-1/2 flex gap-[3px] items-center"
+                        className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-1/2 flex gap-0.75 items-center"
                         style={{ pointerEvents: "none" }}
                       >
                         {[...Array(3)].map((_, d) => (
@@ -508,7 +508,7 @@ const Hero = () => {
               height="18"
               viewBox="0 0 18 18"
               fill="none"
-              className="opacity-60 flex-shrink-0"
+              className="opacity-60 shrink-0"
             >
               <rect
                 x="2"
