@@ -1,5 +1,5 @@
 import "./globals.css";
-
+import { ViewTransition } from "react";
 
 export const metadata = {
   title: "Create Next App",
@@ -9,9 +9,11 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" suppressHydrationWarning={true}>
-      <body
+      <body 
       >
-        {children}
+        <ViewTransition>
+          {children}
+        </ViewTransition>
       </body>
     </html>
   );

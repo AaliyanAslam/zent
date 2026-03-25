@@ -9,6 +9,7 @@ import {
 } from "lucide-react";
 import { Inter, Urbanist } from "next/font/google";
 import Image from "next/image";
+import Link from "next/link";
 
 const inter = Inter({ subsets: ["latin"], weight: ["400", "600"] });
 const urban = Urbanist({ subsets: ["latin"], weight: ["400", "600"] });
@@ -31,6 +32,8 @@ const Navbar = () => {
             {isOpen ? <X size={24} /> : <Menu size={24} strokeWidth={1.5} />}
           </button>
 
+          <Link href="/" >
+          
           <Image
             src="/logo.png"
             alt="Brand Logo"
@@ -38,6 +41,7 @@ const Navbar = () => {
             height={30}
             className="object-contain w-25 md:w-32.5"
           />
+          </Link>
 
           {/* Desktop Menu Icon (Optional extra) */}
           <button className="hidden lg:block hover:opacity-70 transition-opacity">
@@ -47,12 +51,12 @@ const Navbar = () => {
 
         {/* CENTER SECTION: Desktop Nav Links */}
         <div className="hidden lg:flex items-center gap-10 text-[11px] font-semibold tracking-[0.20em] uppercase text-[#93aaba]">
-          <a
-            href="#"
+          <Link
+            href="/watches"
             className="hover:text-white transition-colors border-b border-transparent hover:border-white pb-1"
           >
             Watches
-          </a>
+          </Link>
           <a
             href="#"
             className="hover:text-white transition-colors border-b border-transparent hover:border-white pb-1"
