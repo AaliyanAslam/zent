@@ -36,7 +36,7 @@ const Navbar = () => {
             alt="Brand Logo"
             width={110}
             height={30}
-            className="object-contain w-[100px] md:w-[130px]"
+            className="object-contain w-25 md:w-32.5"
           />
 
           {/* Desktop Menu Icon (Optional extra) */}
